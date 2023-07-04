@@ -43,9 +43,7 @@ public static class DependencyInjection
         {
             c.BaseAddress = new Uri(configuration.GetSection("GitHubApi:Url").Value);
 
-            //c.DefaultRequestHeaders.Add(configuration.GetSection("GitHubApi:Key:Key").Value, configuration.GetSection("OpenWeatherApi:Key:Value").Value);
-
-            //c.DefaultRequestHeaders.Add(configuration.GetSection("OpenWeatherApi:Host:Key").Value, configuration.GetSection("OpenWeatherApi:Host:Value").Value);
+            c.DefaultRequestHeaders.Add(configuration.GetSection("GitHubApi:GithubToken").Value, configuration.GetSection("GithubApi:GithubToken").Value);
         });
 
         services.AddTransient<IHttpClientHandler, Services.Handlers.HttpClientHandler>();
