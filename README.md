@@ -1,4 +1,4 @@
-## Teste Marfrig - Fábio Muniz (ntitsolutions01@gmail.com)
+## Teste TerraInvestimentos - Fábio Muniz (ntitsolutions01@gmail.com)
 
 Este é um modelo de solução para a criação de uma API da Web ASP.NET Core seguindo os princípios da Arquitetura Limpa.
 
